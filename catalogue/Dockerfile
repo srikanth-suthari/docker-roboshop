@@ -13,5 +13,8 @@ COPY *.js .
 #exposing the application
 EXPOSE 8080
 
+#install the required dependencies
+RUN npm install
+
 #finally run the application
 CMD ["node", "server.js"]
