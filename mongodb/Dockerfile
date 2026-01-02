@@ -5,4 +5,4 @@ FROM mongo:7.0
 # after copying docker will automatically create all the required schemas as mentioned in the collection code
 COPY *.js /docker-entrypoint-initdb.d
 
-# "/docker-entrypoint-initdb.d" is the default location for storing or initialsing the database in a docker container
+#"/docker-entrypoint-initdb.d" is the default location for storing or initialsing the database in a docker container
