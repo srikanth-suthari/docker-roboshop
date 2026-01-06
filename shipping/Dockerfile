@@ -17,7 +17,7 @@ EXPOSE 8080
 RUN mvn clean package
 
 #Here we are changing the name of our artifact from com.shpping.jar to shipping.jar
-RUN mv src/target/com.shipping.jar shipping.jar
+RUN mv target/shipping-1.0.jar shipping.jar
 
 #At final we are running our application or .jar file using java runtime in the conatiner
 CMD ["java", "-j", "shipping.jar"]
