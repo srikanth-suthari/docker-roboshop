@@ -16,7 +16,7 @@ EXPOSE 8080
 #here we install all the dependencies from maven repository and build it into a .jar file as an executable using this command
 RUN mvn clean package
 
-#Here we are changing the name of our artifact from com.shpping.jar to shipping.jar
+#Here we are changing the name of our artifact from shipping-1.0.jar to shipping.jar and moving it from target directory to working directory
 RUN mv target/shipping-1.0.jar shipping.jar
 
 #At final we are running our application or .jar file using java runtime in the conatiner
