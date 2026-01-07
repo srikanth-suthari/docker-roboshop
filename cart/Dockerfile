@@ -18,6 +18,11 @@ EXPOSE 8080
 # npm is the package manager for the node.js
 RUN npm install
 
+# Setting environment variables for our application to communicate with other applications
+ENV REDIS_HOST="redis" \
+    CATALOGUE_HOST="catalogue" \
+    CATALOGUE_PORT="8080"
+
 # Connect or build the communication with other applications as needed
 #
 # Finally running the application using its commands in cmd field
