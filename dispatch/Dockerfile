@@ -1,6 +1,6 @@
 FROM golang
 WORKDIR /opt/server
-COPY go.mod .
+COPY main.go .
 EXPOSE 8080
 RUN mod init dispatch
 RUN go get
