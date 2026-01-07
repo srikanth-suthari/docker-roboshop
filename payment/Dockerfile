@@ -1,5 +1,5 @@
 # Here we are taking python3 based image as our base os
-FROM python3.9
+FROM python:3.9
 WORKDIR /opt/server
 EXPOSE 8080
 COPY payment.ini .
