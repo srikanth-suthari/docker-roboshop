@@ -19,5 +19,11 @@ RUN mvn clean package
 #Here we are changing the name of our artifact from shipping-1.0.jar to shipping.jar and moving it from target directory to working directory
 RUN mv target/shipping-1.0.jar shipping.jar
 
+# Setting env for shipping service
+ENV CART_HOST="cart" \
+    CART_PORT="8080" \
+    MYSQL_HOST="mysql" \
+    MYSQL_PORT="3306"
+
 #At final we are running our application or .jar file using java runtime in the conatiner
 CMD ["java", "-jar", "shipping.jar"]
