@@ -20,10 +20,8 @@ RUN mvn clean package
 RUN mv target/shipping-1.0.jar shipping.jar
 
 # Setting env for shipping service
-ENV CART_HOST="cart" \
-    CART_PORT="8080" \
-    MYSQL_HOST="mysql" \
-    MYSQL_PORT="3306"
+ENV CART_ENDPOINT="cart:8080" \
+    DB_HOST="mysql"
 
 #At final we are running our application or .jar file using java runtime in the conatiner
 CMD ["java", "-jar", "shipping.jar"]
