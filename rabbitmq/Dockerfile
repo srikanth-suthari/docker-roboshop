@@ -1,4 +1,4 @@
-FROM rabbitmq
+FROM rabbitmq:3
 
 # For http based ports
 EXPOSE 5371
