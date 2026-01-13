@@ -5,7 +5,7 @@ FROM mysql:8.0
 ENV MYSQL_ROOT_PASSWORD="RoboShop@1"
 
 # Copying the necessary files like init script to the docker entrypoint at this location for initialising the mysql db
-COPY db /docker-entrypoint-initdb.d
+COPY db/ /docker-entrypoint-initdb.d
 
 # # Copying the custom script to the /usr/local/bin/ location for checking the root user and its password
 # COPY custom-script.sh /usr/local/bin/custom-script.sh
