@@ -17,8 +17,8 @@ RUN go build dispatch
 
 #Setting up the env to communicate with other services
 ENV AMPQ_HOST="rabbitmq" \
-    AMPQ_USER="roboshop" \
-    AMPQ_PASS="roboshop123"
+    AMQP_USER="roboshop" \
+    AMQP_PASS="roboshop123"
 
 #Finally running the binary/executable of the compiled go application.
 CMD ["./dispatch"]
