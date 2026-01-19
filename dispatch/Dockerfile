@@ -16,7 +16,7 @@ RUN go get
 RUN go build dispatch
 
 #Setting up the env to communicate with other services
-ENV AMPQ_HOST="rabbitmq" \
+ENV AMQP_HOST="rabbitmq" \
     AMQP_USER="roboshop" \
     AMQP_PASS="roboshop123"
 
