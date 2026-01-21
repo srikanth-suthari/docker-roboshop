@@ -27,3 +27,5 @@ ENV CART_HOST="cart" \
 # finally running the application with uwsgi
 # uwsgi works as a webserver to the python runtime --> like nginx for other applications
 CMD ["uwsgi", "--ini", "payment.ini"]
+
+# This is how we run the flask or django based applications with uwsgi.
