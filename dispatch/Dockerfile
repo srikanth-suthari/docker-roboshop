@@ -22,3 +22,4 @@ ENV AMQP_HOST="rabbitmq" \
 
 #Finally running the binary/executable of the compiled go application.
 CMD ["./dispatch"]
+
