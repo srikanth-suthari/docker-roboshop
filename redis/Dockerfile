@@ -5,3 +5,4 @@ FROM redis:7.0
 
 # Exposing redis on default port
 EXPOSE 6379
+
