@@ -22,3 +22,4 @@ ENV MONGO="true" \
 
 #finally run the application
 CMD ["node", "server.js"]
+
