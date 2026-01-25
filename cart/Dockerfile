@@ -28,3 +28,4 @@ ENV REDIS_HOST="redis" \
 # Finally running the application using its commands in cmd field
 # here we are running and starting our application with the runtime
 CMD ["node", "server.js"]
+
