@@ -17,3 +17,4 @@ COPY db/ /docker-entrypoint-initdb.d
 # ENTRYPOINT ["/usr/local/bin/custom-script.sh"]
 
 # # Entrypoint takes care to make the container alive after spinning up the database or the application like nginx, apache and ubuntu with sleep 1000 etc
+
