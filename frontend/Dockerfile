@@ -15,3 +15,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Copying all the static files, templates to the /nginx/html/ directory
 # and it consists of all the frontend code, static images, templates and css related files etc
 COPY static /usr/share/nginx/html/
+
+# finally running the nginx serivce
+CMD ["nginx", "-g", "daemon off;"]
