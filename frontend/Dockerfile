@@ -1,3 +1,5 @@
+#this is frontend
+
 FROM nginx
 
 # Removing the default index.html from /nginx/html directory
