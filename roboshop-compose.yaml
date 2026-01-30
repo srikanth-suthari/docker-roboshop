@@ -79,7 +79,8 @@ networks:       # network roboshop
     driver: bridge
     name: roboshop
     external: false # true if you have created network manually using docker network command
-volumes:
+
+volumes:        # creating persistant volumes for these services
   mongodb: # docker volume create mongodb. /var/lib/docker/volumes
   redis:
   mysql:
