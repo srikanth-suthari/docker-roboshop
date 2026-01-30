@@ -1,5 +1,6 @@
+# Declaring all the services
 services:
-  catalogue:
+  catalogue:      # catalogue service
     build:
       context: ./catalogue
       dockerfile: Dockerfile
