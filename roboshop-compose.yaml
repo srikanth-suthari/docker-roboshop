@@ -74,7 +74,7 @@ services:
     - cart
     - shipping
     - payment
-networks:
+networks:       # network roboshop
   default:
     driver: bridge
     name: roboshop
