@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     image: joindevops/catalogue:v1
     container_name: catalogue
-    depends_on:
+
+    depends_on:     # It ensures that the mongodb is started first and the dependant service will be created
     - mongodb
   mongodb:
     build: ./mongodb
