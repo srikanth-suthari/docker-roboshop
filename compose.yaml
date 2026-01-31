@@ -63,6 +63,12 @@ services:
     - rabbitmq
     - cart
     - user
+  dispatch:
+    build: ./dispatch
+    image: joindevops/dispatch:v1
+    container_name: dispatch
+    depends_on:
+      - rabbitmq
   frontend:
     build: ./frontend
     image: joindevops/frontend:v1
