@@ -14,3 +14,5 @@ In another project, we are going to implement the same docker project with multi
 Finally docker compose is also implemented using docker-compose.yanl file.
 
 Here we build all the containers using this file.
+
+also run all the services at the same time.
