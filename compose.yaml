@@ -9,7 +9,7 @@ services:
 
     depends_on:     # It ensures that the mongodb is started first and the dependant service will be created
     - mongodb
-  mongodb:
+  mongodb:      # mongodb service
     build: ./mongodb
     image: joindevops/mongodb:v1
     container_name: mongodb
