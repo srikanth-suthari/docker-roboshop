@@ -84,7 +84,7 @@ services:
 
 networks:       # network roboshop
   default:
-    driver: bridge
+    driver: bridge	# bridge type network
     name: roboshop
     external: false # true if we have created network manually using docker network command
 
