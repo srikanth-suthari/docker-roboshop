@@ -2,6 +2,8 @@ FROM nginx:1.29.4-alpine
 
 RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
+
 USER roboshop
 
 RUN mkdir -p /var/cache/nginx/client_temp && \
