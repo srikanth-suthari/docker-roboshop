@@ -9,7 +9,9 @@ EXPOSE 8080
 
 # copying the required files and their dependency files
 COPY payment.ini .
+
 COPY *.js .
+
 COPY requirements.txt .
 
 # run and install dependencies
