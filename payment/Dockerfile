@@ -10,7 +10,7 @@ EXPOSE 8080
 # copying the required files and their dependency files
 COPY payment.ini .
 
-COPY *.js .
+COPY *.py .
 
 COPY requirements.txt .
 
