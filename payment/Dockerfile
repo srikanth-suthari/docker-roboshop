@@ -8,11 +8,11 @@ WORKDIR /opt/server
 EXPOSE 8080
 
 # copying the required files and their dependency files
-COPY payment.ini .
+COPY payment.ini ./
 
-COPY *.py .
+COPY *.py ./
 
-COPY requirements.txt .
+COPY requirements.txt ./
 
 # run and install dependencies
 RUN pip3 install -r requirements.txt
